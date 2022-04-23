@@ -32,7 +32,7 @@ $(document).ready(function () {
     $("#hour17 .task").val(localStorage.getItem("hour17"));
     $("#hour18 .task").val(localStorage.getItem("hour18"));
     $("#hour19 .task").val(localStorage.getItem("hour19"));
-        // Check which hour it is and Colour code it accordingly
+        // Check which hour it is and Color code it accordingly
         function hourTracker() {
             //Get the current number of hours
             var currentHour = moment().hour();
