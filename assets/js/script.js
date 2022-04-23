@@ -32,3 +32,32 @@ $(document).ready(function () {
     $("#hour17 .task").val(localStorage.getItem("hour17"));
     $("#hour18 .task").val(localStorage.getItem("hour18"));
     $("#hour19 .task").val(localStorage.getItem("hour19"));
+        // Check which hour it is and Colour code it accordingly
+        function hourTracker() {
+            //Get the current number of hours
+            var currentHour = moment().hour();
+    
+            // loop over time blocks
+            $(".time-block").each(function () {
+                var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+                
+                //check if we've moved past this time
+                if (blockHour < currentHour) {
+                    $(this).addClass("past");
+                    $(this).removeClass("future");
+                    $(this).removeClass("present");
+                }
+                else if (blockHour === currentHour) {
+                    $(this).removeClass("past");
+                    $(this).addClass("present");
+                    $(this).removeClass("future");
+                }
+                else {
+                    $(this).removeClass("present");
+                    $(this).removeClass("past");
+                    $(this).addClass("future");
+                }
+            })
+        }
+        hourTracker();
+    });
