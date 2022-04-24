@@ -19,7 +19,8 @@ Colour coded (as required) to show current hour time-slot, greyed out passed hou
  https://cannibalclarence.github.io/challenge-5/
 
 ## Screenshot
-![Web capture_23-4-2022_221151_](https://user-images.githubusercontent.com/100390351/164957662-c9d45ffb-c350-49a1-b394-9882a54d562a.jpeg)
+![Web capture_24-4-2022_16828_cannibalclarence github io](https://user-images.githubusercontent.com/100390351/165000494-38dc904c-c1e0-485a-8088-ccdd8027a1b4.jpeg)
+
 
 ## contribution
 Made with love by Theo Phillips
